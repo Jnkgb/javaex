@@ -16,6 +16,7 @@ public class Application1 {
         if ((ko+eng+math)/3<60){
             System.out.println("평균점수 미달로 불합격입니다.");
             su=false;
+            //sdf
         }
         if (ko<40){
             System.out.println("국어 점수 미달로 불합격입니다.");
