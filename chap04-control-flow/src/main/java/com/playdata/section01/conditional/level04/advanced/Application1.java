@@ -13,19 +13,19 @@ public class Application1 {
         int math=sc.nextInt();
         boolean su=true;
 
-        if ((ko+eng+math)/3<40){
+        if ((ko+eng+math)/3<60){
             System.out.println("평균점수 미달로 불합격입니다.");
             su=false;
         }
-        if (ko<60){
+        if (ko<40){
             System.out.println("국어 점수 미달로 불합격입니다.");
             su=false;
         }
-        if (eng<60){
+        if (eng<40){
             System.out.println("영어 점수 미달로 불합격입니다.");
             su=false;
         }
-        if (math<60){
+        if (math<40){
             System.out.println("수학 점수 미달로 불합격입니다.");
             su=false;
         }
