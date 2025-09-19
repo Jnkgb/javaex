@@ -16,7 +16,7 @@ public class Application {
     }
 
 
-    public static void main(String[] args) {
+    public  void run() {
         Scanner sc= new Scanner(System.in);
 
         while  (true){
@@ -30,8 +30,14 @@ public class Application {
             switch (sc.nextInt()) {
                 case 1 -> createUser();
                 case 2 -> System.out.println("");
-                case 3 -> movieService.movieNameInfo();
-                        break;
+                case 3 -> {
+                    System.out.print("예매할 영화를 선택 해주세요");
+                    System.out.println(movieService.movieNameInfo());
+                    System.out.print("예매할 영화 : ");
+                    String movieName=sc.nextLine();
+                    movieService.movieDateTimeInfo(movieName);
+                }
+                case 4-> System.out.println("");
             }
         }
 
@@ -66,5 +72,9 @@ public class Application {
         com.greedy.chinema.Movie addMovie=new com.greedy.chinema.Movie(title,director,movieDateType);
         MovieRepository movieRepository=new MovieRepository();
         movieRepository.insertMovie(addMovie);
+    }
+    public static void main(String[] args){
+        Application application=new Application();
+        application.run();
     }
 }

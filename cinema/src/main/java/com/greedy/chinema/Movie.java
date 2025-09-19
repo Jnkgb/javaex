@@ -9,6 +9,7 @@ public class Movie {
     private String title;
     private String director;
     private Map<String,LocalDateTime> movieDateType;
+    private int[][] seat;
 
     public Movie(String director, String title,Map<String,LocalDateTime> movieDateType) {
         this.title = title;
