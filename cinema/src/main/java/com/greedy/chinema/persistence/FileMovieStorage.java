@@ -27,7 +27,7 @@ public class FileMovieStorage implements MovieStorage {
     private final String filePath;
 
     public FileMovieStorage() {
-        this.filePath = "/Users/insu/javapj/javaex-main/cinema/src/main/java/com/greedy/chinema/db/db.txt";
+        this.filePath = "src/main/java/com/greedy/chinema/db/db.txt";
     }
 
     public FileMovieStorage(String filePath) {
